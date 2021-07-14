@@ -45,8 +45,9 @@ body{
     cursor: pointer;
     font-weight: 500;
 }
-.header-text a:hover .fa-arrow-right{
+.header-text a:hover{
     padding: 15px;
+    background-image: linear-gradient(to right , #008cff, #920467);
     transition: .5s;
 }
 .header-thumbnail img{
