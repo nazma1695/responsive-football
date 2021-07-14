@@ -21,10 +21,19 @@ body{
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
 }
+.header-content{
+    transition: transform 1s, filter 2s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+.header-content:hover .header-text h1{
+    transform: scale(1.2);
+}
 .header-text{
     margin-left: 160px;
 }
 .header-text h1{
+    transition: transform 1s, filter 2s ease-in-out;
     font-size: 64px;
     color: #fff;
 }
@@ -33,10 +42,24 @@ body{
     background: #E02C6D;
     padding: 10px 24px;
     color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+.header-text a:hover .fa-arrow-right{
+    padding: 15px;
+    transition: .5s;
 }
 .header-thumbnail img{
     width: 556.01px;
     height: 438px;
+}
+.header-thumbnail img{
+    transition: transform 1s, filter 2s ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+.header-thumbnail:hover img {
+    transform: scale(1.2);
 }
 
 /* player area */
