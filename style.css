@@ -52,6 +52,7 @@ body{
 .header-thumbnail img{
     width: 556.01px;
     height: 438px;
+    cursor: pointer;
 }
 .header-thumbnail img{
     transition: transform 1s, filter 2s ease-in-out;
