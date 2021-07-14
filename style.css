@@ -1,0 +1,324 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style or utilities */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+/* Header area */
+.header-area{
+    background-color: #2D25A0;
+	padding: 100px 0;
+    clear: both;
+}
+.header-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.header-text{
+    margin-left: 160px;
+}
+.header-text h1{
+    font-size: 64px;
+    color: #fff;
+}
+.header-text a{
+    text-decoration: none;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #fff;
+}
+.header-thumbnail img{
+    width: 556.01px;
+    height: 438px;
+}
+
+/* player area */
+.players-area{
+    width: 1100px;
+    margin: 0 auto;
+    clear: both;
+}
+.players{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 0px;
+}
+.player{
+    padding: 15px;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+	margin-top: 27px;
+	margin-left: 27px;
+}
+.player-thumbnail img {
+	width: 100%;
+    border-radius: 3px;
+}
+.player-detail h3{
+    color: #18191F;
+    font-size: 28px;
+}
+.player-detail p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/* Game Report area */
+.game-report-area{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 70px 0px;
+    clear: both;
+}
+.game-report{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.game-report-content h4{
+    font-size: 20px;
+    color: #999;
+    letter-spacing: 2px;
+    margin: -10px 0px;
+}
+.game-report-content h1{
+    font-size: 35px;
+    color: #000;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.game-report-content p{
+    font-size: 15px;
+    margin-top: -5px;
+    padding: 10px 0px;
+}
+.game-report-content a{
+    text-decoration: none;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #fff;
+}
+
+/* Game schedule area */
+.game-schedules{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 70px 0px;
+    clear: both;
+}
+.game-schedule-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 26px;
+}
+.game-schedule{
+    border: 1px solid #ddd;;
+    display: flex;
+    margin-left: 30px;
+    padding: 10px;
+}
+.game-schedules h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.game-schedule .thumbnail img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px 0px;
+}
+.game-schedule-info{
+    margin-left: 16px;
+}
+.game-schedule-title{
+    font-size: 20px;
+}
+.game-schedule-date{
+    color: #9f9f9f;
+    font-size: 16px;
+}
+
+/* Footer area  */
+.footer{
+	text-align: center;
+	padding: 20px 0px;
+}
+.footer-logo {
+	margin-right: 30px;
+}
+.footer-logo img {
+	width: 400px;
+	height: 110px;
+}
+.icon {
+	padding: 20px 0px;
+}
+.icon a {
+    text-decoration: none;
+}
+.icon i {
+	margin: 0px 14px;
+	font-size: 20px;
+	color: #969BAB;
+    background: #E7E7E8;
+	padding: 8px;
+	border-radius: 50%;
+	text-align: center;
+}
+.copy-right {
+	font-size: 18px;
+	color: #000;
+	margin-top: 10px;
+}
+
+/*-------------------------
+Responsive css  media querry 
+--------------------------*/
+
+/********************** 
+    For Mobile Device
+***********************/
+
+@media only screen and (max-width:688px){
+    .header-area {
+        padding: 30px 0;
+        padding-bottom: 80px;
+    }
+    .header-content{
+        justify-content: center;
+    }
+    .header-content,.players,.game-report,.game-schedule-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header-thumbnail img {
+        width: 350px;
+        height: 350px;
+        margin-top: 45px;
+        margin-left: 35px;
+    }
+    .header-text{
+        margin-left: 35px;
+    }
+    .header-text h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 50px;
+    }
+    .players-area,.game-report-area, .game-schedules {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .players{
+        padding: 43px 0px;
+    }
+    .player {
+        margin: 10px 0px;
+    }
+    .game-report-area{
+        padding: 0;
+    }
+    .game-report{
+        padding: 43px 0px;
+    }
+    .game-report-content{
+        margin-left: 10px;
+        margin-bottom: 35px;
+    }
+    .game-report-video iframe {
+        width: 100%;
+    }
+    .game-schedules h1{
+        margin-top: -40px;
+        margin-left: 10px;
+    }
+    .game-schedule-content{
+        margin-left: -25px;
+    }
+    .footer-logo img {
+        width: 289px;
+        height: 110px;
+    }
+}
+
+
+/********************** 
+    For Tablet Device
+***********************/
+@media only screen and (min-width:689px) and (max-width:992px){
+    .header-area {
+        padding: 30px 0;
+        padding-bottom: 80px;
+    }
+    .header-content{
+        justify-content: center;
+    }
+    .header-content,.players,.game-report,.game-schedule-content{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+    .header-thumbnail img {
+        width: 350px;
+        height: 350px;
+        margin-top: 45px;
+        margin-left: 35px;
+    }
+    .header-text{
+        margin-left: 35px;
+    }
+    .header-text h1 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 50px;
+    }
+    .players-area,.game-report-area,.game-schedules {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .players,.game-report{
+        padding: 43px 0px;
+    }
+    .player {
+        margin: 10px 0px;
+    }
+    .game-report-area{
+        padding: 0;
+    }
+    .game-report-content{
+        width: 80%;
+        margin-left: 30px;
+        margin-bottom: 35px;
+    }
+    .game-report-content h4{
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: -70px;
+        text-align: center;
+    }
+    .game-report-content h1 {
+        margin-top: 20px;
+    }
+    .game-report-video iframe {
+        width: 100%;
+    }
+    .game-schedules h1{
+        margin-left: 10px;
+    }
+    .game-schedule-content{
+        margin-left: -25px;
+    }
+    .footer-logo img {
+        width: 289px;
+        height: 110px;
+    }
+}
+
